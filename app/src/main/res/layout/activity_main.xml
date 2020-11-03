@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+
+  <EditText
+      android:id="@+id/enter_birth_et"
+      android:layout_width="wrap_content"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="25sp"
+      android:hint="Enter Your Date"
+      android:textSize="16sp"
+      android:textColor="#000"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:padding="20dp"
+      android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/age_tv"
+        android:layout_width="wrap_content"
+        android:text="Your Age"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@id/enter_birth_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="190dp"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/get_age_btn"
+        android:layout_width="wrap_content"
+        android:text="call"
+        app:layout_constraintStart_toStartOf="@id/age_tv"
+        app:layout_constraintEnd_toEndOf="@id/age_tv"
+        app:layout_constraintTop_toBottomOf="@id/age_tv"
+        android:layout_marginTop="25sp"
+        android:textColor="#EEE6E6"
+        android:background="#E91E63"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
